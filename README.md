@@ -1,6 +1,6 @@
-# Portfolio Blog Starter
+# Portfolio Website
 
-This is a porfolio site template complete with a blog. Includes:
+This is a porfolio site it includes:
 
 - MDX and Markdown support
 - Optimized for SEO (sitemap, robots, JSON-LD schema)
@@ -10,6 +10,7 @@ This is a porfolio site template complete with a blog. Includes:
 - Tailwind v4
 - Vercel Speed Insights / Web Analytics
 - Geist font
+- daisyUI
 
 ## Demo
 
@@ -25,18 +26,14 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
 
-### Clone and Deploy
+### Running the example
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
-
+Open a terminal and run the following commands:
 ```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
+pnpm install
 ```
-
-Then, run Next.js in development mode:
 
 ```bash
 pnpm dev
 ```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+The website should be available at [localhost:3000](localhost:3000)
