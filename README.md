@@ -14,17 +14,10 @@ This is a porfolio site it includes:
 
 ## Demo
 
-https://portfolio-blog-starter.vercel.app
+https://alexandrusulea.com
 
-## How to Use
+## 
 
-You can choose from one of the following two methods to use this repository:
-
-### One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
 
 ### Running the example
 
