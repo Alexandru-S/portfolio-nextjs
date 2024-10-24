@@ -27,6 +27,10 @@ export default function Page() {
 
   return (
     <section>
+    <div className="p-10">
+      <button className="btn btn-primary">Button</button>
+    </div>
+
     <h1 className="">My Portfolio Website</h1>
     <p className="">
     {`I am a passionate full stack software developer with a wealth of experience in backend database design, frontend integration, and cloud infrastructure. In my current role, I build digital solutions using TypeScript, containerized in Docker, and deployed with Kubernetes. I thrive in environments where I can streamline development processes with CI/CD pipelines, whether through GitHub Actions or cloud-native tools. My expertise spans modern frameworks like Remix.js, Next.js, and NestJS, and I regularly work with databases such as PostgreSQL.`}

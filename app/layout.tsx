@@ -1,7 +1,5 @@
 import './global.css'
 import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -11,7 +9,7 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    template: '%s | Next.js Portfolio Starter',
+    template: '%s | Next.js Portfolio Website',
     default: 'Alexandru Sulea Portfolio Website',
   },
   description: 'This is my portfolio.',
@@ -46,13 +44,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cx(
-        GeistSans.variable,
-        GeistMono.variable
-      )}
     >
-      <body className="">
-        <main className="">
+      <body>
+        <main>
           <Navbar />
           {children}
           <Footer />
