@@ -46,7 +46,7 @@ export default function RootLayout({
       lang="en"
     >
       <body>
-        <main>
+        <main className='bg-neutral-content'>
           <Navbar />
           {children}
           <Footer />

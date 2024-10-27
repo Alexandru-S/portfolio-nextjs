@@ -46,7 +46,7 @@ export function Navbar() {
           })}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Alex's Portfolio</a>
+        <a className="btn btn-ghost text-xl text-base-200">Alex's Portfolio</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -56,7 +56,7 @@ export function Navbar() {
               <Link
                 key={path}
                 href={path}
-                className=""
+                className="text-base-200"
               >
                 {name}
               </Link>
