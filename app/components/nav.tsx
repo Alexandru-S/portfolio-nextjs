@@ -10,10 +10,8 @@ const navItems = {
 }
 
 export function Navbar() {
-  return (
-    <aside className="">
-     
-    <div className="navbar bg-base-100">
+  return (     
+    <div className="navbar bg-primary">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -68,6 +66,5 @@ export function Navbar() {
         </ul>
       </div>
     </div>
-    </aside>
   )
 }
