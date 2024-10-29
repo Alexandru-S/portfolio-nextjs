@@ -52,14 +52,16 @@ export default function Page() {
               {/* Repo name as the main title */}
               <h3 className="card-title text-xl font-semibold">{repo.name}</h3>
               {/* Language of the repo */}
-              <p className="text-gray-600">{repo.language ? `Language: ${repo.language}` : 'No language specified'}</p>
-              <div className="mt-4">
-                {/* Link to the repo */}
+              
+              <div className="card-actions">
+                <div className="badge badge-outline">{repo.language ? `Language: ${repo.language}` : 'No language specified'}</div>
+              </div>
+              <div className="card-actions">
                 <a
-                  className="text-blue-500 underline"
-                  target="_blank"
                   href={repo.clone_url}
+                  target="_blank"
                   rel="noopener noreferrer"
+                  className="btn btn-primary text-white underline"
                 >
                   Visit Repository
                 </a>
