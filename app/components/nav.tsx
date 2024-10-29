@@ -33,7 +33,7 @@ export function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
           {Object.entries(navItems).map(([path, { name }]) => {
             return (
-              <li>
+              <li key={path}>
               <Link
                 key={path}
                 href={path}
@@ -46,13 +46,13 @@ export function Navbar() {
           })}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl text-base-200">Alex's Portfolio</a>
+        <a className="btn btn-ghost text-xl text-base-200">Alex&apos;s Portfolio</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {Object.entries(navItems).map(([path, { name }]) => {
             return (
-              <li>
+              <li key={path}>
               <Link
                 key={path}
                 href={path}
