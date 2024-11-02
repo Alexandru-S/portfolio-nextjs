@@ -56,7 +56,7 @@ export function Navbar() {
               <Link
                 key={path}
                 href={path}
-                className="text-base-200"
+                className="text-base-200 text-xl"
               >
                 {name}
               </Link>
