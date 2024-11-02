@@ -45,7 +45,7 @@ export default function Page() {
       </div>
 
       {/* Grid container for project cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
         {repos.map((repo) => (
           <div key={repo.id} className="card bg-base-100 shadow-lg">
             <div className="card-body">

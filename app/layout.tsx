@@ -4,6 +4,7 @@ import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
+import Hero from './components/hero'
 import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body>
         <main className='bg-neutral-content'>
           <Navbar />
+          <Hero />
           {children}
           <Footer />
           <Analytics />
