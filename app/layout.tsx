@@ -1,10 +1,10 @@
 import './global.css'
 import type { Metadata } from 'next'
-import { Navbar } from './components/nav'
+import { Navbar } from './components/Nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import Footer from './components/footer'
-import Hero from './components/hero'
+import Footer from './components/Footer'
+import Hero from './components/Hero'
 import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
