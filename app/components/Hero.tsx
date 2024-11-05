@@ -27,7 +27,7 @@ export default function Hero() {
         >
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-neutral-content text-center">
-                <div className="max-w-md">
+                <div className="max-w-l">
                     <h1 className="mb-5 text-5xl font-bold">Hello there and welcome to my website</h1>
                     <p className="mb-5">
                         Welcome to my portfolio! I’m a full-stack developer with a passion for creating dynamic and responsive web applications. Explore my work and projects here.
