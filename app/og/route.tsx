@@ -2,7 +2,7 @@ import { ImageResponse } from '@vercel/og'
 
 export function GET(request: Request) {
   let url = new URL(request.url)
-  let title = url.searchParams.get('title') || 'Alexandru Sulea Portfolio Website'
+  let title = url.searchParams.get('title') || 'Alex Sulea Portfolio Website'
 
   return new ImageResponse(
     (
