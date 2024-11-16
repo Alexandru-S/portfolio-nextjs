@@ -21,9 +21,7 @@ export default function Page() {
       try {
         const response = await fetch('https://api.github.com/users/Alexandru-S/repos');
         const data = await response.json();
-        
         const sortedData = data.sort((a: Repo, b: Repo) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
-        
         setRepos(sortedData);
       } catch (error) {
         console.error('Error fetching repos:', error);
