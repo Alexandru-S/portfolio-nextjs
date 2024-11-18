@@ -30,3 +30,17 @@ pnpm install
 pnpm dev
 ```
 The website should be available at [localhost:3000](localhost:3000)
+
+### Linting the code
+
+Open a terminal and run the following commands:
+```bash
+pnpm lint
+```
+
+### Testing the code
+
+Open a terminal and run the following commands:
+```bash
+pnpm test
+```
