@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import {IntroCard} from './components/IntroCard';
 import {RepoGrid} from './components/RepoGrid';
-import { Navbar } from './components/Nav'
 
 interface Repo {
   id: number;
