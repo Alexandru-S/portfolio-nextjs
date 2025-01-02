@@ -20,6 +20,9 @@ export default function Page() {
       try {
         const response = await fetch('https://api.github.com/users/Alexandru-S/repos');
         const data = await response.json();
+        if (!Array.isArray(data)) {
+          throw new Error('Invalid response format');
+        }
         const sortedData = data.sort((a: Repo, b: Repo) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
         setRepos(sortedData);
       } catch (error) {
