@@ -6,6 +6,7 @@ export function BlogPosts() {
 
   return (
     <div>
+      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
       {allBlogs
         .sort((a, b) => {
           if (
@@ -16,21 +17,36 @@ export function BlogPosts() {
           return 1
         })
         .map((post) => (
-          <Link
-            key={post.slug}
-            className=""
-            href={`/blog/${post.slug}`}
-          >
-            <div className="">
-              <p className="">
-                {formatDate(post.metadata.publishedAt, false)}
-              </p>
-              <p className="">
-                {post.metadata.title}
-              </p>
+
+          <li key={post.metadata.publishedAt}>
+            <div className="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5">
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd" />
+              </svg>
             </div>
-          </Link>
+            <div className="timeline-start mb-10 md:text-end">
+              <time className="font-mono italic">{formatDate(post.metadata.publishedAt, false)}</time>
+              <Link
+                key={post.slug}
+                className=""
+                href={`/blog/${post.slug}`}
+              >
+                <div className="text-lg font-black">{post.metadata.title}</div>
+           
+              </Link>
+
+            </div>
+            <hr />
+          </li>
         ))}
+        </ul>
     </div>
   )
 }
