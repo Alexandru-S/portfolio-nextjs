@@ -59,7 +59,7 @@ export default function Blog({ params }) {
   }
 
   return (
-    <section className="container mx-auto p-4">
+    <section className="container mx-auto p-12">
       <script
         type="application/ld+json"
         suppressHydrationWarning
