@@ -5,8 +5,7 @@ export function BlogPosts() {
   let allBlogs = getBlogPosts()
 
   return (
-    <div>
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+    <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-base-100 shadow-lg bg-diagonal-lines">
       {allBlogs
         .sort((a, b) => {
           if (
@@ -16,8 +15,7 @@ export function BlogPosts() {
           }
           return 1
         })
-        .map((post) => (
-
+        .map((post, index) => (
           <li key={post.metadata.publishedAt}>
             <div className="timeline-middle">
               <svg
@@ -31,7 +29,11 @@ export function BlogPosts() {
                   clipRule="evenodd" />
               </svg>
             </div>
-            <div className="timeline-start mb-10 md:text-end">
+            <div className={`${
+                index % 2 === 0
+                  ? 'timeline-start mb-10 md:text-end'
+                  : 'timeline-end md:mb-10'
+              }`}>
               <time className="font-mono italic">{formatDate(post.metadata.publishedAt, false)}</time>
               <Link
                 key={post.slug}
@@ -39,14 +41,13 @@ export function BlogPosts() {
                 href={`/blog/${post.slug}`}
               >
                 <div className="text-lg font-black">{post.metadata.title}</div>
-           
+                {post.metadata.summary}
               </Link>
 
             </div>
             <hr />
           </li>
-        ))}
-        </ul>
-    </div>
+      ))}
+    </ul>
   )
 }
