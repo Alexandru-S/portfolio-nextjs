@@ -18,7 +18,6 @@ https://alexandrusulea.com
 
 ##
 
-
 ### Running the example
 
 Open a terminal and run the following commands:
