@@ -19,3 +19,13 @@ lint-fix:
 # Command to build the project
 build:
 	pnpm run build
+
+# Command to stage changes, create a commit with Commitizen, and push to the repository
+commit:
+	git add --all
+	pnpm run commit
+	git push
+
+# Command to create tree from folder structure
+tree:
+	tree -I 'node_modules|.next|.git' > directory-structure.txt

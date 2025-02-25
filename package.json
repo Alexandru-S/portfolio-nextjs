@@ -7,7 +7,8 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "commit": "cz"
   },
   "dependencies": {
     "@types/node": "20.11.17",
