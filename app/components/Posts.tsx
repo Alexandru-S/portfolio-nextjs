@@ -43,7 +43,6 @@ export function BlogPosts() {
                 <div className="text-lg font-black">{post.metadata.title}</div>
                 {post.metadata.summary}
               </Link>
-
             </div>
             <hr />
           </li>
