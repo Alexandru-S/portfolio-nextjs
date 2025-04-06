@@ -1,5 +1,5 @@
 import { render, screen, waitFor } from "@testing-library/react";
-import Hero from "../components/Hero"; // Adjust the path based on your structure
+import Hero from "../components/Hero";
 
 beforeEach(() => {
   global.fetch = jest.fn(() =>
