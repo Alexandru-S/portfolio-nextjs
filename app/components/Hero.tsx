@@ -20,6 +20,7 @@ export default function Hero() {
 
     return (
         <div
+            data-testid="hero-container"
             className="hero min-h-1/2 h-[50vh]"
             style={{
                 backgroundImage: `url(${backgroundImage})`,
