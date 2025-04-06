@@ -1,10 +1,6 @@
-// __tests__/Hero.test.tsx or components/Hero.test.tsx
-
 import { render, screen, waitFor } from "@testing-library/react";
 import Hero from "../components/Hero"; // Adjust the path based on your structure
 
-// Use a global fetch mock. You might use jest-fetch-mock or a similar library.
-// For this example, we’ll override global.fetch manually.
 beforeEach(() => {
   global.fetch = jest.fn(() =>
     Promise.resolve({
