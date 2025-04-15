@@ -7,7 +7,7 @@ This is a porfolio site it includes:
 - [ ] RSS Feed
 - [ ] Dynamic OG images
 - [ ] Syntax highlighting
-- [ ] Tailwind v4
+- [x] Tailwind v4
 - [ ] Vercel Speed Insights / Web Analytics
 - [ ] Geist font
 - [x] daisyUI
