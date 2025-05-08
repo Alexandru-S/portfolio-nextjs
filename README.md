@@ -1,12 +1,12 @@
 # Portfolio Website
 
-This is a porfolio site it includes:
+This site includes:
 
 - [ ] MDX and Markdown support
 - [ ] Optimized for SEO (sitemap, robots, JSON-LD schema)
 - [ ] RSS Feed
 - [ ] Dynamic OG images
-- [ ] Syntax highlighting
+- [x] Syntax highlighting
 - [x] Tailwind v4
 - [ ] Vercel Speed Insights / Web Analytics
 - [ ] Geist font
