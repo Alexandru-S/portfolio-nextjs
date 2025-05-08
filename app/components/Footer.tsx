@@ -17,7 +17,7 @@ function ArrowIcon() {
 
 export default function Footer() {
   return (
-    <footer className="footer footer-center bg-neutral text-neutral-content items-center p-10">
+    <footer data-testid="footer-container" className="footer footer-center bg-neutral text-neutral-content items-center p-10">
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a aria-label="View my profile on LinkedIn" href="https://www.linkedin.com/in/alexandrusulea/">
