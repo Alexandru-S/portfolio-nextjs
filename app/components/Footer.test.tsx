@@ -23,7 +23,6 @@ test("fetches and renders component", async () => {
   
   // Wait for the useEffect to finish and the state to update.
   const footerContainer = await screen.findByTestId("footer-container");
-  console.log("TEST")
   // Check that the style was updated with the background image.
   await waitFor(() => {
     expect(footerContainer).toBeDefined();
