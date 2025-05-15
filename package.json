@@ -6,10 +6,10 @@
     "start": "next start",
     "lint": "next lint --max-warnings 0",
     "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
     "test": "jest",
     "test:watch": "jest --watch",
-    "commit": "cz",
-    "type-check": "tsc --noEmit"
+    "commit": "cz"
   },
   "dependencies": {
     "@types/node": "20.11.17",
