@@ -8,7 +8,8 @@
     "lint:fix": "next lint --fix",
     "test": "jest",
     "test:watch": "jest --watch",
-    "commit": "cz"
+    "commit": "cz",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@types/node": "20.11.17",
