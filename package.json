@@ -9,6 +9,7 @@
     "type-check": "tsc --noEmit",
     "test": "jest",
     "test:watch": "jest --watch",
+    "snyk:test": "snyk test --severity-threshold=medium",
     "commit": "cz"
   },
   "dependencies": {
@@ -47,6 +48,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^15.2.10",
+    "snyk": "^1.1297.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2"
   },
