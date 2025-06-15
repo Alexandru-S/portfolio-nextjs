@@ -43,3 +43,7 @@ Open a terminal and run the following commands:
 ```bash
 pnpm test
 ```
+
+### Makefile
+
+Commands are available to be run from the Makefile also
