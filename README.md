@@ -28,7 +28,7 @@ pnpm install
 ```bash
 pnpm dev
 ```
-The website should be available at [localhost:3000](localhost:3000)
+The app can be accessed locally at [localhost:3000](localhost:3000)
 
 ### Linting the code
 
