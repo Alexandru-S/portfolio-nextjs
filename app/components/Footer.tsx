@@ -56,6 +56,5 @@ export default function Footer() {
         <p>Copyright © {new Date().getFullYear()}</p>
       </aside>
     </footer>
-
   )
 }
