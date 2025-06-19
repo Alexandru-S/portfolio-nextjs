@@ -46,4 +46,5 @@ pnpm test
 
 ### Makefile
 
-Commands are available to be run from the Makefile also
+Commands are available to be run from the Makefile also,
+all that is needed is to type `make` and the command.
