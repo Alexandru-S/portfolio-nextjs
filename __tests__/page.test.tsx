@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Page from '../app/page';
-import { mockRepos } from './test.consts.ts';
+import { mockRepos } from './test.consts';
 
 beforeEach(() => {
   fetchMock.resetMocks();
