@@ -6,11 +6,9 @@ beforeEach(() => {
     Promise.resolve({
       json: () =>
         Promise.resolve({
-          results: [
-            { urls: { regular: "http://example.com/test-image.jpg" } },
-          ],
+          results: [{ urls: { regular: "http://example.com/test-image.jpg" } }],
         }),
-    })
+    }),
   ) as jest.Mock;
 });
 
@@ -20,7 +18,7 @@ afterEach(() => {
 
 test("fetches and renders component", async () => {
   render(<Footer />);
-  
+
   // Wait for the useEffect to finish and the state to update.
   const footerContainer = await screen.findByTestId("footer-container");
   // Check that the style was updated with the background image.

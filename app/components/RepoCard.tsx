@@ -16,7 +16,9 @@ export function RepoCard({ repo }: RepoCardProps) {
       <div className="card-body">
         <h3 className="card-title text-xl font-semibold">{repo.name}</h3>
         <div className="card-actions">
-          <div className="badge badge-neutral">{repo.language ? `${repo.language}` : 'No language specified'}</div>
+          <div className="badge badge-neutral">
+            {repo.language ? `${repo.language}` : "No language specified"}
+          </div>
         </div>
         <div className="card-actions">
           <a

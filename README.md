@@ -19,6 +19,7 @@ https://alexandrusulea.com
 ### Running the example
 
 Open a terminal and run the following commands:
+
 ```bash
 pnpm install
 ```
@@ -26,11 +27,13 @@ pnpm install
 ```bash
 pnpm dev
 ```
+
 The app can be accessed locally at [localhost:3000](localhost:3000)
 
 ### Linting the code
 
 Open a terminal and run the following commands:
+
 ```bash
 pnpm lint
 ```
@@ -38,6 +41,7 @@ pnpm lint
 ### Testing the code
 
 Open a terminal and run the following commands:
+
 ```bash
 pnpm test
 ```

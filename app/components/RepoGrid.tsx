@@ -1,4 +1,4 @@
-import {RepoCard} from './RepoCard';
+import { RepoCard } from "./RepoCard";
 
 interface Repo {
   id: number;

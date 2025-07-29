@@ -1,12 +1,12 @@
-import { render, screen } from '@testing-library/react';
-import Page from '../app/page';
-import { mockRepos } from './consts';
+import { render, screen } from "@testing-library/react";
+import Page from "../app/page";
+import { mockRepos } from "./consts";
 
 beforeEach(() => {
   fetchMock.resetMocks();
 });
 
-test('fetches and displays repos', async () => {
+test("fetches and displays repos", async () => {
   fetchMock.mockResponseOnce(JSON.stringify(mockRepos));
   render(<Page />);
 

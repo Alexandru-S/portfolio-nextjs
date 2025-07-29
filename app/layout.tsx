@@ -1,26 +1,26 @@
-import './global.css'
-import type { Metadata } from 'next'
-import { Navbar } from './components/Nav'
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
-import Footer from './components/Footer'
-import Hero from './components/Hero'
-import { baseUrl } from './sitemap'
+import "./global.css";
+import type { Metadata } from "next";
+import { Navbar } from "./components/Nav";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import { baseUrl } from "./sitemap";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    template: '%s | Next.js Portfolio Website',
-    default: 'Alex Sulea Website',
+    template: "%s | Next.js Portfolio Website",
+    default: "Alex Sulea Website",
   },
-  description: 'This is my website.',
+  description: "This is my website.",
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: "My Portfolio",
+    description: "This is my portfolio.",
     url: baseUrl,
-    siteName: 'My Portfolio',
-    locale: 'en_US',
-    type: 'website',
+    siteName: "My Portfolio",
+    locale: "en_US",
+    type: "website",
   },
   robots: {
     index: true,
@@ -28,26 +28,24 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
-}
+};
 
-const cx = (...classes) => classes.filter(Boolean).join(' ')
+const cx = (...classes) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-    >
+    <html lang="en">
       <body>
-        <main className='bg-neutral-content'>
+        <main className="bg-neutral-content">
           <Navbar />
           <Hero />
           {children}
@@ -57,5 +55,5 @@ export default function RootLayout({
         </main>
       </body>
     </html>
-  )
+  );
 }

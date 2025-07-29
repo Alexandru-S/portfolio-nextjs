@@ -2,20 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .bg-diagonal-lines {
-    background-image: repeating-linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.1) 0,
-        rgba(0, 0, 0, 0.1) 1px,
-        transparent 1px,
-        transparent 17px
-    );
-    background-size: 40px 40px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.1) 0,
+    rgba(0, 0, 0, 0.1) 1px,
+    transparent 1px,
+    transparent 17px
+  );
+  background-size: 40px 40px;
 }
 
 :root {
-    --glass-opacity: 0.2; /* Adjust to make the glass effect more transparent */
-    --glass-blur: 10px;
-    --glass-border-opacity: 0.3;
-  }
+  --glass-opacity: 0.2; /* Adjust to make the glass effect more transparent */
+  --glass-blur: 10px;
+  --glass-border-opacity: 0.3;
+}

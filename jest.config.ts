@@ -3,16 +3,15 @@
  * https://jestjs.io/docs/configuration
  */
 
-import type {Config} from 'jest';
-import nextJest from 'next/jest.js'
+import type { Config } from "jest";
+import nextJest from "next/jest.js";
 
 const createJestConfig = nextJest({
   // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
-  dir: './',
-})
+  dir: "./",
+});
 
 const config: Config = {
-
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -109,7 +108,7 @@ const config: Config = {
   // notifyMode: "failure-change",
 
   // A preset that is used as a base for Jest's configuration
-  preset: 'ts-jest',
+  preset: "ts-jest",
 
   // Run tests from one or more projects
   // projects: undefined,
@@ -141,7 +140,7 @@ const config: Config = {
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  setupFiles: ['./jest.setup.ts'],
+  setupFiles: ["./jest.setup.ts"],
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   // setupFilesAfterEnv: [],
 
@@ -167,10 +166,7 @@ const config: Config = {
   // ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-   testPathIgnorePatterns: [
-     "/node_modules/",
-     "./__tests__/consts.ts",
-   ],
+  testPathIgnorePatterns: ["/node_modules/", "./__tests__/consts.ts"],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],

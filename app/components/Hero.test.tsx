@@ -6,11 +6,9 @@ beforeEach(() => {
     Promise.resolve({
       json: () =>
         Promise.resolve({
-          results: [
-            { urls: { regular: "http://example.com/test-image.jpg" } },
-          ],
+          results: [{ urls: { regular: "http://example.com/test-image.jpg" } }],
         }),
-    })
+    }),
   ) as jest.Mock;
 });
 
@@ -20,10 +18,10 @@ afterEach(() => {
 
 test("fetches image and applies it as a background", async () => {
   render(<Hero />);
-  
+
   // Wait for the useEffect to finish and the state to update.
   const heroContainer = await screen.findByTestId("hero-container");
-  
+
   // Check that the style was updated with the background image.
   await waitFor(() => {
     expect(heroContainer).toBeDefined();
