@@ -3,11 +3,10 @@
 This site includes:
 
 - [x] MDX and Markdown support
-- [ ] Optimized for SEO (sitemap, robots, JSON-LD schema)
+- [x] Optimized for SEO (sitemap, robots, JSON-LD schema)
 - [x] Dynamic OG images
 - [x] Syntax highlighting
 - [x] Tailwind v4
-- [ ] Vercel Speed Insights / Web Analytics
 - [x] daisyUI
 
 ## Demo
