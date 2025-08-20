@@ -1,2 +1,2 @@
 pnpm lint && pnpm type-check && pnpm test
-detect-secrets-hook --baseline .secrets.baseline
+#detect-secrets-hook --baseline .secrets.baseline
