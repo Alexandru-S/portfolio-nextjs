@@ -11,6 +11,13 @@
     transparent 17px
   );
   background-size: 40px 40px;
+  animation: diagonal-pan 2s linear infinite;
+
+}
+
+@keyframes diagonal-pan {
+  from { background-position: 0 0; }
+  to   { background-position: 40px 40px; } /* same as background-size */
 }
 
 :root {
