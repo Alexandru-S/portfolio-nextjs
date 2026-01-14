@@ -32,7 +32,7 @@ export default function Hero() {
           <h1 className="mb-5 text-5xl font-bold">Welcome to my site</h1>
           <p className="mb-5">
             I’m a full-stack developer with a passion for creating dynamic and
-            responsive web applications. Explore my work and projects here.
+            responsive web applications.
           </p>
         </div>
       </div>
