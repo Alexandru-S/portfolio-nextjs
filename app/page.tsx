@@ -3,14 +3,7 @@
 import { useEffect, useState } from "react";
 import { IntroCard } from "./components/IntroCard";
 import { RepoGrid } from "./components/RepoGrid";
-
-interface Repo {
-  id: number;
-  name: string;
-  language: string;
-  clone_url: string;
-  updated_at: string;
-}
+import { Repo } from "./types/repo";
 
 export default function Page() {
   const [repos, setRepos] = useState<Repo[]>([]);

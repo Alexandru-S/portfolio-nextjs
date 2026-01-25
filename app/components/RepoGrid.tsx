@@ -1,16 +1,5 @@
 import { RepoCard } from "./RepoCard";
-
-interface Repo {
-  id: number;
-  name: string;
-  language: string;
-  clone_url: string;
-  updated_at: string;
-}
-
-interface RepoGridProps {
-  repos: Repo[];
-}
+import { RepoGridProps } from "app/types/repo";
 
 export function RepoGrid({ repos }: RepoGridProps) {
   return (

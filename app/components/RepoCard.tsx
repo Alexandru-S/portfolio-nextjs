@@ -1,15 +1,4 @@
-interface Repo {
-  id: number;
-  name: string;
-  language: string;
-  clone_url: string;
-  updated_at: string;
-  description: string;
-}
-
-interface RepoCardProps {
-  repo: Repo;
-}
+import { RepoCardProps } from "app/types/repo";
 
 export function RepoCard({ repo }: RepoCardProps) {
   return (
