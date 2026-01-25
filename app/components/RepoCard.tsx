@@ -4,6 +4,7 @@ interface Repo {
   language: string;
   clone_url: string;
   updated_at: string;
+  description: string;
 }
 
 interface RepoCardProps {
@@ -15,12 +16,13 @@ export function RepoCard({ repo }: RepoCardProps) {
     <div className="card bg-base-100 shadow-lg bg-diagonal-lines">
       <div className="card-body">
         <h3 className="card-title text-xl font-semibold text-cyan-900">{repo.name}</h3>
+         <p>{repo.description}</p>
         <div className="card-actions">
           <div className="badge badge-neutral p-3">
             {repo.language ? `${repo.language}` : "No language specified"}
           </div>
         </div>
-        <div className="card-actions">
+        <div className="card-actions justify-end">
           <a
             href={repo.clone_url}
             target="_blank"
@@ -30,7 +32,9 @@ export function RepoCard({ repo }: RepoCardProps) {
             Visit Repository
           </a>
         </div>
+       
       </div>
+      
     </div>
   );
 }

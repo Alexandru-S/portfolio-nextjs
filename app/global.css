@@ -18,23 +18,23 @@ h6,
 
 .bg-diagonal-lines {
   background-image: repeating-linear-gradient(
-    45deg,
+    85deg,
     rgba(0, 0, 0, 0.1) 0,
     rgba(0, 0, 0, 0.1) 1px,
     transparent 1px,
-    transparent 17px
+    transparent 20px
   );
-  background-size: 40px 40px;
+  background-size: 15px 20px;
   animation: diagonal-pan 2s linear infinite;
 }
 
 @keyframes diagonal-pan {
   from {
-    background-position: 0 0;
+    background-position: 0px 40px;
   }
   to {
-    background-position: 40px 40px;
-  } /* same as background-size */
+    background-position: 0px 0px;
+  }
 }
 
 @keyframes slow-pan-up {
