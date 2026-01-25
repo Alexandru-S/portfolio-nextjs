@@ -2,35 +2,35 @@
 
 import { useEffect, useState } from "react";
 
+import backgroundImageUrl from "./background.jpg";
+
 export default function Hero() {
   const [backgroundImage, setBackgroundImage] = useState("");
 
   useEffect(() => {
-    const fetchImage = async () => {
-      const response = await fetch(
-        `https://api.unsplash.com/search/photos?query=chicago&client_id=${process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY}`,
-      );
-      const data = await response.json();
-      const imageUrl = data.results[0]?.urls?.regular || "";
-      setBackgroundImage(imageUrl);
-    };
-
-    fetchImage();
+    setBackgroundImage(backgroundImageUrl.src ?? backgroundImageUrl);
   }, []);
 
   return (
     <div
       data-testid="hero-container"
-      className="hero min-h-1/2 h-[50vh]"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-      }}
+      className="hero min-h-1/3 bg-black bg-gradient-to-br from-slate-900 to-slate-700"
     >
-      <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-neutral-content text-center">
-        <div className="max-w-l glass rounded-box p-4">
-          <h1 className="mb-5 text-5xl font-bold">Welcome to my site</h1>
-          <p className="mb-5">
+        <div className="max-w-l p-4 py-6 lg:py-12">
+          <h1
+            className="mb-5 text-7xl font-black tracking-wider text-transparent bg-clip-text md:text-8xl lg:text-9xl hero-title"
+            style={{
+              backgroundImage: `url(${backgroundImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            Alex Sulea
+          </h1>
+          <p className="mb-5 text-2xl lg:text-3xl">
             I’m a full-stack developer with a passion for creating dynamic and
             responsive web applications.
           </p>

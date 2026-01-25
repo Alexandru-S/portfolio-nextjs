@@ -2,7 +2,7 @@ export function IntroCard() {
   return (
     <div className="card bg-base-100 w-full shadow-xl mb-6">
       <div className="card-body">
-        <h2 className="card-title text-2xl">A little about me</h2>
+        <h2 className="card-title text-2xl text-cyan-900 font-bold">A little about me</h2>
         <p>
           I am a passionate full stack software developer with a wealth of
           experience in backend database design, frontend integration, and cloud

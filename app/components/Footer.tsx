@@ -1,8 +1,8 @@
 function ArrowIcon() {
   return (
     <svg
-      width="12"
-      height="12"
+      width="24"
+      height="24"
       viewBox="0 0 12 12"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer
       data-testid="footer-container"
-      className="footer footer-center bg-neutral text-neutral-content items-center p-10"
+      className="footer footer-center bg-black bg-gradient-to-br from-slate-900 to-slate-700 text-neutral-content items-center p-10"
     >
       <nav>
         <div className="grid grid-flow-col gap-4">
@@ -29,8 +29,8 @@ export default function Footer() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="48"
+              height="48"
               viewBox="0 0 24 24"
               className="fill-current"
             >
@@ -43,8 +43,8 @@ export default function Footer() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="48"
+              height="48"
               viewBox="0 0 24 24"
               className="fill-current"
             >

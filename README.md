@@ -1,5 +1,6 @@
 # Portfolio Website
 
+A personal portfolio website built with a modern frontend stack.
 This site includes:
 
 - [x] MDX and Markdown support
@@ -15,7 +16,7 @@ https://alexandrusulea.com
 
 ### Running the example
 
-> Open a terminal and run the following commands:
+> Install dependencies and start the development server:
 
 ```bash
 pnpm install
@@ -29,7 +30,7 @@ The app can be accessed locally at [localhost:3000](localhost:3000)
 
 ### Linting the code
 
-> Open a terminal and run the following commands:
+> Run the linter:
 
 ```bash
 pnpm lint
@@ -37,7 +38,7 @@ pnpm lint
 
 ### Testing the code
 
-> Open a terminal and run the following commands:
+> Run the test suite:
 
 ```bash
 pnpm test
@@ -45,5 +46,5 @@ pnpm test
 
 ### Makefile
 
-Commands are available to be run from the Makefile also,
-all that is needed is to type `make` and the command.
+Common commands are also available via the Makefile.
+Run  `make` and the command.
