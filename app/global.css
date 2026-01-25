@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +7,12 @@ h1 {
   font-family: "Limelight", sans-serif;
 }
 
-h2, h3, h4, h5, h6, .heading-font {
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-font {
   font-family: "Poppins", sans-serif;
 }
 
@@ -21,12 +26,35 @@ h2, h3, h4, h5, h6, .heading-font {
   );
   background-size: 40px 40px;
   animation: diagonal-pan 2s linear infinite;
-
 }
 
 @keyframes diagonal-pan {
-  from { background-position: 0 0; }
-  to   { background-position: 40px 40px; } /* same as background-size */
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 40px;
+  } /* same as background-size */
+}
+
+@keyframes slow-pan-up {
+  from {
+    background-position: 50% 50%;
+  }
+  to {
+    background-position: 50% 0%;
+  }
+}
+
+.hero-text-mask-rotate {
+  animation: slow-pan-up 30s linear infinite alternate;
+  will-change: background-position;
+}
+
+.hero-text-svg {
+  display: block;
+  height: 1em;
+  width: 100%;
 }
 
 :root {

@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="hero-content text-neutral-content text-center">
         <div className="max-w-l p-4 py-6 lg:py-12">
           <h1
-            className="mb-5 text-7xl font-black tracking-wider text-transparent bg-clip-text md:text-8xl lg:text-9xl hero-title"
+            className="hero-text-mask-rotate mb-5 text-7xl font-black tracking-wider text-transparent bg-clip-text md:text-8xl lg:text-9xl hero-title"
             style={{
               backgroundImage: `url(${backgroundImage})`,
               backgroundSize: "cover",

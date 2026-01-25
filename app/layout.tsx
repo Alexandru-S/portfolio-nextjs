@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     default: "Alex Sulea Website",
   },
   description: "This is my website.",
+  icons: {
+    icon: [
+      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-64.png", sizes: "64x64", type: "image/png" },
+    ],
+  },
   openGraph: {
     title: "My Portfolio",
     description: "This is my portfolio.",
