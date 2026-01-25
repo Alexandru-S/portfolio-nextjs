@@ -16,7 +16,7 @@ export function RepoCard({ repo }: RepoCardProps) {
     <div className="card bg-base-100 shadow-lg bg-diagonal-lines">
       <div className="card-body">
         <h3 className="card-title text-xl font-semibold text-cyan-900">{repo.name}</h3>
-         <p>{repo.description}</p>
+         <p>{repo.description}</p>ö
         <div className="card-actions">
           <div className="badge badge-neutral p-3">
             {repo.language ? `${repo.language}` : "No language specified"}
