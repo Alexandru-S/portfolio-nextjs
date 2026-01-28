@@ -4,9 +4,6 @@ const navItems = {
   "/": {
     name: "home",
   },
-  "/blog": {
-    name: "blog",
-  },
   "https://www.linkedin.com/in/alexandrusulea/": {
     name: "linkedin",
   },
